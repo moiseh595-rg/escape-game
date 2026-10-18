@@ -6,7 +6,7 @@ Groupe : 8
 1. MEMBRES DU BINÔME
 
 - MUGISHA MOISE
-- BOURKHIS CHAIMAE
+- ********
 
 2. PRÉSENTATION DU PROJET
 
@@ -18,7 +18,7 @@ Notre site présente l'univers du jeu, les quatre étapes de l'aventure ainsi qu
 
 3. LIENS DU PROJET
 
-Site web : http://webinfo.iutmontp.univ-montp2.fr/~mugisham/
+Site web : https://moiseh595-rg.github.io/escape-game/
 
 Dépôt GitLab : https://gitlabinfo.iutmontp.univ-montp2.fr/mugisham/sae105-escapegame
 
@@ -33,7 +33,7 @@ MUGISHA MOISE :
 - Réalisation du CSS concernant le menu de navigation, le positionnement des images et certains éléments de la mise en page.
 - Participation aux ajustements et à la finalisation du site.
 
-BOURKHIS CHAIMAE :
+******** :
 
 - Réalisation du CSS concernant l'apparence générale du site.
 - Choix des couleurs, des polices et du style visuel.

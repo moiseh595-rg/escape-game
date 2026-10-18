@@ -316,3 +316,53 @@ footer p {
 .illustration p {
     margin-top: 12px;
 }
+/* Portfolio identity and responsive navigation */
+header nav { display:flex; align-items:center; justify-content:space-between; gap:clamp(10px,3vw,28px); padding:0 max(14px,calc((100vw - 1100px)/2)); }
+header nav > ul { flex:1; justify-content:flex-end; min-width:0; }
+.creator-logo { display:inline-flex; flex:0 0 auto; align-items:center; justify-content:center; padding:8px; border-radius:50%; transition:transform .2s ease,background .2s ease; }
+.creator-logo img { display:block; width:40px; height:40px; object-fit:contain; }
+.creator-logo:hover { background:#453326; transform:scale(1.06); }
+.creator-logo:focus-visible, nav a:focus-visible { outline:3px solid #E3BE70; outline-offset:3px; }
+nav .sous-menu { z-index:20; }
+.menu-deroulant.is-open .sous-menu { display:flex; }
+.contenu-etape > div { min-width:0; }
+.contenu-etape img { min-width:0; }
+.trois-illustrations { flex-wrap:wrap; }
+@media (max-width:900px) { main { width:90%; } .contenu-etape img { height:auto; aspect-ratio:4/3; } }
+@media (max-width:760px) {
+ html { scroll-padding-top:115px; }
+ header nav { padding:8px 12px; align-items:center; gap:8px; }
+ header nav > ul { justify-content:flex-end; flex-wrap:wrap; gap:0; }
+ nav a { padding:10px 9px; font-size:.78rem; min-height:44px; display:flex; align-items:center; }
+ .creator-logo { padding:4px; }
+ .creator-logo img { width:36px; height:36px; }
+ .sous-menu { left:auto; right:0; max-width:min(90vw,290px); }
+ .contenu-etape { flex-direction:column; align-items:stretch; }
+ .contenu-etape img { width:100%; max-width:100%; height:auto; aspect-ratio:4/3; }
+ .trois-illustrations { gap:16px; }
+ .illustration { flex:1 1 180px; }
+ .illustration img { height:auto; aspect-ratio:4/3; }
+ section { margin:42px 0; }
+ article { padding:20px; }
+}
+@media (max-width:460px) {
+ header nav { flex-wrap:wrap; justify-content:center; }
+ .creator-logo { margin-right:auto; }
+ header nav > ul { flex:1 1 100%; justify-content:space-between; }
+ nav li { flex:1 1 auto; }
+ nav a { justify-content:center; text-align:center; padding:10px 6px; font-size:.73rem; }
+ .menu-deroulant .sous-menu li { flex:1 1 auto; }
+ main { width:92%; }
+ #accueil { padding:50px 16px; }
+ .trois-illustrations { flex-direction:column; }
+ .illustration { flex-basis:auto; }
+ .illustration img { aspect-ratio:5/3; }
+}
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+
+/* Interactive artwork without changing the medieval theme */
+.contenu-etape img, .illustration img, article img { transition:transform .4s ease, filter .4s ease, box-shadow .4s ease; }
+@media (hover:hover) and (pointer:fine) {
+  .contenu-etape img:hover, .illustration img:hover, article img:hover { transform:scale(1.025); filter:brightness(1.08); box-shadow:0 12px 30px rgba(0,0,0,.3); }
+}
+@media (prefers-reduced-motion:reduce) { .contenu-etape img, .illustration img, article img { transition:none; } }
